@@ -9,6 +9,7 @@ public class Mano extends Baraja{
 			System.out.println(c.getNombreCarta());
 		}
 	}
+	
 	public Carta elegirCarta() {
 		Scanner sc = new Scanner(System.in);
 		listarCartas();

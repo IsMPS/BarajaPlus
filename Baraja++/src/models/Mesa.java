@@ -4,7 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Mesa{
-	private Baraja baraja;
+	protected Baraja baraja;
+	
 	public Carta robarCartaDeBaraja() {
 		return baraja.getLista_cartas().get(0);
 				
@@ -19,9 +20,7 @@ public class Mesa{
 		return cartita;
 	}
 	
-	public void addCartaABaraja() {
-//		Carta carta = elegirCarta();
-//		InsertaCartaFinal(carta);
-		baraja.InsertaCartaFinal(0);
+	public void addCartaABaraja(Carta c) {
+		baraja.InsertaCartaFinal(c);
 	}
 }

@@ -5,9 +5,6 @@ import java.util.Collections;
 
 public class Baraja {
 	
-	public static void main(String[] args) {
-	}
-	
 	protected ArrayList<Carta> lista_cartas;
 
 	/**
