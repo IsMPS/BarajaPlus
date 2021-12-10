@@ -12,7 +12,7 @@ public class Baraja {
 	 */
 	public Baraja() {
 		super();
-		this.lista_cartas = new ArrayList<Carta>(40);
+		this.lista_cartas = new ArrayList<Carta>();
 	}
 
 	/**
@@ -20,7 +20,7 @@ public class Baraja {
 	 */
 	public Baraja(int tipobaraja) {
 		super();
-		this.lista_cartas = new ArrayList<Carta>(tipobaraja*40);
+		this.lista_cartas = new ArrayList<Carta>();
 		for (int i = 1; i <= tipobaraja * 40; i++) {
 			this.lista_cartas.add(new Carta(i));
 		}

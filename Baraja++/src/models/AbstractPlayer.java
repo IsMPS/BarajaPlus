@@ -2,10 +2,33 @@ package models;
 
 public abstract class  AbstractPlayer {
 	protected String nombre;
-	protected int puntos;
+	protected double puntos;
 	protected Mano mano;
 	protected Mesa mesa;
+	protected boolean perdido;
 	
+	/**
+	 * @return the puntos
+	 */
+	protected double getPuntos() {
+		return puntos;
+	}
+
+	/**
+	 * @param perdido the perdido to set
+	 */
+	protected void setPerdido(boolean perdido) {
+		this.perdido = perdido;
+	}
+
+
+	/**
+	 * @return the perdido
+	 */
+	protected boolean isPerdido() {
+		return perdido;
+	}
+
 	/**
 	 * @param nombre
 	 * @param puntos
@@ -21,7 +44,15 @@ public abstract class  AbstractPlayer {
 	}
 
 	
-	
+	/**
+	 * @param mano the mano to set
+	 */
+	protected void setMano(Mano mano) {
+		this.mano = mano;
+	}
+
+
+
 	/**
 	 * @return the nombre
 	 */

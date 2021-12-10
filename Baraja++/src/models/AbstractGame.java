@@ -1,14 +1,13 @@
 package models;
 
 import java.util.ArrayList;
-import java.util.Scanner;
 
 public abstract class AbstractGame {
-	private boolean finished;
+	protected boolean finished;
 //	private enum modoJuego; 
 	// solitario, 1vsCPU, PvP, multiplayer
-	protected ArrayList<AbstractPlayer> array;
-	private Mesa mesa;
+	protected ArrayList<AbstractPlayer> jugadores = new ArrayList<AbstractPlayer>();
+	protected Mesa mesa;
 	protected int ronda;
 	
 	abstract void bienvenida();
